@@ -1,0 +1,274 @@
+/* ========== Global Base ========== */
+body {
+  background: #ffffff;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ========== Main Container ==========  */
+.wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 20px auto !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* ========== Headings & Labels ========== */
+h1, h2, label {
+  color: #111;
+}
+
+/* ========== Form Fields ========== */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  padding: 6px 8px;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  display: block !important;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007cba;
+  outline: none;
+}
+
+/* ========== Buttons ========== */
+.button,
+.button-primary,
+body.dark-mode .button,
+body.dark-mode .button-primary {
+  background-color: #007cba;
+  border-color: #006ba1;
+  color: #fff;
+  display: inline-block;
+  width: auto !important;
+  min-width: 100px;
+  max-width: 200px;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: normal;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+
+.button-primary:hover {
+  background-color: #0096dc;
+  border-color: #0096dc;
+}
+
+/* ========== Message Boxes ========== */
+.optimizer-message {
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin: 12px 0;
+}
+
+.optimizer-success {
+  background: #e6f9f5;
+  border-left: 4px solid #00bfa5;
+  color: #00695c;
+}
+
+.optimizer-warning {
+  background: #fff9e6;
+  border-left: 4px solid #ffb300;
+  color: #795548;
+}
+
+.optimizer-error {
+  background: #ffecec;
+  border-left: 4px solid #e53935;
+  color: #b71c1c;
+}
+
+/* ========== Performance Results ========== */
+#performance-results {
+  background-color: #f9f9f9;
+  border-left: 4px solid #007cba;
+  color: #111;
+}
+
+/* ========== Tables ========== */
+table.wp-list-table {
+  background: #ffffff;
+  border-color: #ddd;
+}
+
+table.wp-list-table th,
+table.wp-list-table td {
+  border-color: #e6e6e6;
+  color: #222;
+}
+
+/* ========== Scrollbars ========== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f0f0f0;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* ========== Mode Toggle Button ========== */
+.mode-toggle {
+  position: absolute;
+  top: calc(var(--wp-admin--admin-bar--height, 32px) + 8px);
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 9999;
+  color: inherit;
+  /* transition: transform 0.2s, color 0.2s; */
+}
+
+/* .mode-toggle:hover {
+  transform: scale(1.2);
+} */
+
+.mode-toggle {
+  color: #ff9800;
+}
+
+/* Normalize wpwrap height in light mode */
+#wpwrap {
+  min-height: 100vh !important;
+  height: auto !important;
+  overflow: hidden !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#wpwrap>*:last-child,
+#wpcontent>*:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Prevent theme toggle from adding height */
+.dark-mode-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.optimizer-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.optimizer-section h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.optimizer-section label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.optimizer-section input[type="text"],
+.optimizer-section input[type="url"],
+.optimizer-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#performance-results {
+    background: #f1f1f1;
+    padding: 10px;
+    border-left: 4px solid #007cba;
+    margin-top: 10px;
+}
+
+/* Success, Warning, and Error Styles */
+body.dark-mode .optimizer-message {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  /* font-weight: 500; */
+}
+
+body.dark-mode .optimizer-success {
+  background: #173c32;
+  border-left: 5px solid #00bfa5;
+  color: #b9f6ea;
+}
+
+body.dark-mode .optimizer-warning {
+  background: #443900;
+  border-left: 5px solid #ffb300;
+  color: #ffe082;
+}
+
+body.dark-mode .optimizer-error {
+  background: #4d161b;
+  border-left: 5px solid #e53935;
+  color: #ff8a80;
+}
+
+
+

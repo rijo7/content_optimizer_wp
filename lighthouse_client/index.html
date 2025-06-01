@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lighthouse Performance Checker</title>
+</head>
+<body>
+  <h2>Check Website Performance</h2>
+  <input type="text" id="url" placeholder="Enter URL (e.g. https://example.com)">
+  <button onclick="checkPerformance()">Check</button>
+
+  <div id="result"></div>
+
+  <script>
+    async function checkPerformance() {
+      const url = document.getElementById("url").value;
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "Checking...";
+
+      try {
+        const response = await fetch(`http://localhost:3000/lighthouse?url=${encodeURIComponent(url)}`);
+        const data = await response.json();
+        resultDiv.innerHTML = `<strong>Performance Score:</strong> ${data.performance}`;
+      } catch (error) {
+        resultDiv.innerHTML = "Error checking performance.";
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>
