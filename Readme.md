@@ -62,7 +62,7 @@ You can deploy the `server/` folder on any of the following free platforms:
 
 | Light Mode | Dark Mode |
 |--------------|-------------------|
-| ![Light Mode](\content_optimizer_wp\content_optimizer\wordpress\wp-content\plugins\content_optimizer_plugin\assets\plugin_ss1.png) | ![Dark Mode](\content_optimizer_wp\content_optimizer\wordpress\wp-content\plugins\content_optimizer_plugin\assets\plugin_ss2.png) |
+| ![Light Mode](assets/plugin_ss1.png) | ![Dark Mode](assets/plugin_ss2.png) |
 
 ---
 
