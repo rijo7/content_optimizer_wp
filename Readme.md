@@ -50,8 +50,8 @@ The server runs on:
 #### Production Deployment (Recommended)
 You can deploy the `server/` folder on any of the following free platforms:
 
-| Platform   | Free Tier | Notes |
-|------------|-----------|-------|
+| Platform   | 
+|------------|
 | [Render](https://render.com)     
 | [Railway](https://railway.app)   
 | VPS (like [Oracle Cloud](https://www.oracle.com/cloud/free/)) 
@@ -62,7 +62,7 @@ You can deploy the `server/` folder on any of the following free platforms:
 
 | Light Mode | Dark Mode |
 |--------------|-------------------|
-| ![plugin_ss1.png](\content_optimizer_wp\content_optimizer\wordpress\wp-content\plugins\content_optimizer_plugin\assets\plugin_ss1.png) | ![plugin_ss2.png](\content_optimizer_wp\content_optimizer\wordpress\wp-content\plugins\content_optimizer_plugin\assets\plugin_ss2.png) |
+| ![Light Mode](\content_optimizer_wp\content_optimizer\wordpress\wp-content\plugins\content_optimizer_plugin\assets\plugin_ss1.png) | ![Dark Mode](\content_optimizer_wp\content_optimizer\wordpress\wp-content\plugins\content_optimizer_plugin\assets\plugin_ss2.png) |
 
 ---
 
@@ -93,11 +93,14 @@ You can extend the plugin to visualize trends using Chart.js or custom reports.
 
 ---
 
-## 📦 Deployment Advice for Interviews
+## 📦 Deployment Advice 
 
-- Showcase Node.js server on Render or Railway  
-- Provide screenshots or screencast of plugin working locally
-- Mention full-stack nature: `PHP ↔️ Node.js ↔️ Lighthouse`
+- Deploy the Node.js Lighthouse audit server using platforms like Render or Railway for quick and cost-effective hosting.
+
+- Include clear screenshots to showcase the plugin’s functionality in action.
+
+- Highlight the full-stack architecture of the project:
+  PHP ↔️ Node.js ↔️ Lighthouse, demonstrating seamless integration between backend and performance auditing services.
 
 ---
 
