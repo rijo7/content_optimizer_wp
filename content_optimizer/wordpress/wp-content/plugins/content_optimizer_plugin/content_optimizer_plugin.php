@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Content Optimizer Plugin
-Description: Analyze your posts for SEO, readability, image optimization, and performance.
-Version: 1.2
+Description: Analyze your posts for SEO, image optimization, and performance.
+Version: 1.0.0
 Author: Rijo Varghese
 */
 
@@ -103,7 +103,7 @@ function enqueue_performance_script($hook)
         [],
         '1.0',
         true
-    );    
+    );
 
     wp_enqueue_script(
         'performance-audit',
@@ -117,8 +117,6 @@ function enqueue_performance_script($hook)
         'ajax_url' => admin_url('admin-ajax.php'),
     ]);
 
-
-
 }
 
 // Admin Page Content
@@ -129,9 +127,6 @@ function content_optimizer_admin_page()
         <!-- Dark‑/light‑mode toggle -->
         <button class="mode-toggle" id="modeToggle" aria-label="Toggle colour mode">🌙</button>
         <h1>Content Optimizer Dashboard</h1>
-
-
-
 
         <!-- SEO Form -->
         <form id="seo-form" method="post">
@@ -170,18 +165,11 @@ function content_optimizer_admin_page()
         </form>
 
         <style>
-  body.dark-mode #wpwrap::after {
-    content: none !important;
-    display: none !important;
-  }
-</style>
-
-
-
-
-
-
-
+            body.dark-mode #wpwrap::after {
+                content: none !important;
+                display: none !important;
+            }
+        </style>
 
         <?php
         // SEO Submission Handling
@@ -213,7 +201,6 @@ function content_optimizer_admin_page()
             $density_class = ($keyword_density >= 1 && $keyword_density <= 2.5) ? 'optimizer-success' : 'optimizer-warning';
             $density_msg = ($keyword_density >= 1 && $keyword_density <= 2.5) ? "✅ Good." : "⚠️ Should be 1%–2.5%.";
             echo "<div class='optimizer-message $density_class'><strong>Keyword Density:</strong> {$keyword_density}% $density_msg</div>";
-
 
             // Image Optimization
             echo "<h2>Image Optimization</h2>";
@@ -263,10 +250,6 @@ function content_optimizer_admin_page()
 
         }
         ?>
-
-
-
-
 
     </div>
     <?php

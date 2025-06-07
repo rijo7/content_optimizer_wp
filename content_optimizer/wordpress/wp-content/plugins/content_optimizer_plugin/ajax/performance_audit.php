@@ -15,7 +15,7 @@ function run_performance_audit_callback()
     $url = esc_url_raw($_POST['url']);
 
     // 2. Make the request to the audit server
-    $response = wp_remote_post('http://localhost:3000/audit', [
+    $response = wp_remote_post('https://lighthouse-audit-server.onrender.com', [
         'body'    => json_encode(['url' => $url]),
         'headers' => ['Content-Type' => 'application/json'],
         'timeout' => 30,
