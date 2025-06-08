@@ -109,7 +109,7 @@ You can extend the plugin to visualize trends using Chart.js or custom reports.
 **Rijo7**  
 🔗 [GitHub Profile](https://github.com/rijo7)
 
-> Built for learning, demonstrating full-stack plugin development, and showcasing readiness for real-world technical roles.
+> Showcases advanced full-stack plugin development with an emphasis on scalability and integration.
 
 ---
 
